@@ -10,6 +10,15 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Индекс массы тела (ИМТ) является полезным измерением для большинства людей старше 20 лет. Результат является оценочным, и его следует рассматривать только как приблизительное руководство, посколько он не принимает во внимание возраст, пол, этническую принадлежность или состав тела"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
     <EditText
         android:id="@+id/editTextHeight"
         android:layout_width="match_parent"
