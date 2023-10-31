@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/description"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -37,4 +38,14 @@
         android:text="Результат: "
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Описание: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
 </LinearLayout>
