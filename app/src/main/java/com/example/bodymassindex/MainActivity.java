@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 float height = Float.parseFloat(heightStr) / 100;
                 float weight = Float.parseFloat(weightStr);
                 float bmi = weight / (height * height);
-                String result = String.format("Индекс массы тела:            %.2f", bmi);
+                String result = String.format("Индекс массы тела:         %.2f", bmi);
                 textViewResult.setText(result);
                 String description = getBMIDescription(bmi);
                 textViewDescription.setText(description);
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             textViewResult.setText("Ошибка: Введите рост и вес.");
             textViewDescription.setVisibility(View.GONE);
+            textViewMoreInfo.setText("");
         }
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(buttonCalculate.getWindowToken(), 0);
