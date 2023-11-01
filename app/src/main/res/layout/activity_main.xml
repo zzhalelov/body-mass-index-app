@@ -5,7 +5,7 @@
     android:id="@+id/description"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -15,7 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Индекс массы тела (ИМТ) является полезным измерением для большинства людей старше 20 лет. Результат является оценочным, и его следует рассматривать только как приблизительное руководство, посколько он не принимает во внимание возраст, пол, этническую принадлежность или состав тела"
+        android:text="Индекс массы тела (ИМТ) является полезным измерением для большинства людей старше 20 лет. Результат является оценочным, и его следует рассматривать только как приблизительное руководство, посколько он не принимает во внимание возраст, пол или состояние здоровья"
+        android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="italic" />
 
@@ -23,6 +24,7 @@
         android:id="@+id/editTextHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         android:hint="Введите рост (см)"
         android:inputType="numberDecimal" />
 
@@ -30,6 +32,7 @@
         android:id="@+id/editTextWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
         android:hint="Введите вес (кг)"
         android:inputType="numberDecimal" />
 
@@ -37,7 +40,8 @@
         android:id="@+id/buttonCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Рассчитать" />
+        android:layout_marginVertical="20dp"
+        android:text="Рассчитать ИМТ" />
 
     <TextView
         android:id="@+id/textViewResult"
@@ -45,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Результат: "
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -54,7 +59,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Описание: "
+        android:textAlignment="center"
+        android:textAllCaps="true"
         android:textSize="18sp"
         android:textStyle="bold"
         android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewMoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic" />
 </LinearLayout>
