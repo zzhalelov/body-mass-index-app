@@ -1,10 +1,10 @@
-package com.example.bodymassindex;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.appMy.bodymassindex;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

@@ -1,15 +1,14 @@
-package com.example.bodymassindex;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.appMy.bodymassindex;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editTextHeight;
