@@ -1,5 +1,6 @@
 package com.appMy.bodymassindex;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -63,10 +64,11 @@ public class MainActivity extends AppCompatActivity {
         imm.hideSoftInputFromWindow(buttonCalculate.getWindowToken(), 0);
     }
 
+    @SuppressLint("SetTextI18n")
     private String getBMIDescription(float bmi) {
         if (bmi < 18.5) {
             textViewDescription.setTextColor(0xFF0000FF);
-            textViewMoreInfo.setText("Ваш ИМТ менее 18,5 указывает на то, что у вас недостаточный вес, поэтому вам, возможно, придется немного прибавить в весе");
+            textViewMoreInfo.setText("");
             return "Недостаточный вес";
         } else if (bmi >= 18.5 && bmi < 24.9) {
             textViewDescription.setTextColor(0xFF00FF00);
